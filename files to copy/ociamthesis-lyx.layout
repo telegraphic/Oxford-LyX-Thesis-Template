@@ -1,0 +1,81 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass{ociamthesis-lyx}
+# Report textclass definition file. Taken from initial LyX source code
+# Author : Danny Price <danny.price@astro.ox.ac.uj>
+# Based on Keith A. Gillow's OCIAM Thesis class
+# which is online at http://www.maths.ox.ac.uk/help/faqs/latex/thesisclass
+
+Format 11
+Input stdclass.inc
+Input numreport.inc
+
+Style Bibliography
+	TopSep                4
+	LabelString           "Bibliography"
+	LabelFont
+	  Series              Bold
+	  Size                Huge
+	EndFont
+End
+
+Style Acknowledgements
+	Margin                Static
+	LatexType             Environment
+	LatexName             acknowledgements
+	Category              FrontMatter
+	NextNoIndent          1
+	LeftMargin            MMM
+	RightMargin           MMM
+	ParIndent             MM
+	ItemSep               0
+	TopSep                0.7
+	BottomSep             0.7
+	ParSep                0
+	Align                 Block
+	LabelType             Centered_Top_Environment
+	LabelString           "Acknowledgements"
+	LabelBottomSep    0.5
+	Font
+	  Size                Small
+	EndFont
+	LabelFont
+	  Series              Bold
+	  Size                Large
+	EndFont
+End
+
+Style AcknowledgementsLong
+	Margin                Static
+	LatexType             Environment
+	LatexName             acknowledgementslong
+	Category              FrontMatter
+	NextNoIndent          1
+	LeftMargin            M
+	RightMargin           M
+	ParIndent             MM
+	ItemSep               0
+	TopSep                0.7
+	BottomSep             0.7
+	ParSep                0
+	Align                 Block
+	LabelType             Centered_Top_Environment
+	LabelString           "Acknowledgements"
+	LabelBottomSep    0.5
+	Font
+	  Size                Small
+	EndFont
+	LabelFont
+	  Series              Bold
+	  Size                Large
+	EndFont
+End
+
+
+Style Dedication
+	LatexType             Environment
+	LatexName             dedication
+	Category              FrontMatter
+End
+
+
+

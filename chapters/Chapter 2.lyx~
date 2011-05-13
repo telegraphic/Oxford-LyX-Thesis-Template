@@ -1,0 +1,297 @@
+#LyX 1.6.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass ociamthesis-lyx
+\options a4paper,titlepage
+\use_default_options false
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\cite_engine natbib_numerical
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+The Nature of Dark Energy
+\end_layout
+
+\begin_layout Section
+Baryon Acoustic Oscillations
+\end_layout
+
+\begin_layout Paragraph
+Some example text:
+\end_layout
+
+\begin_layout Standard
+One of the most important issues in cosmology today is determining the propertie
+s of dark energy 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Abdalla:2010p3021"
+
+\end_inset
+
+.
+ Over cosmological distances, dark energy acts as a repulsive force 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Peebles:2003p3088"
+
+\end_inset
+
+ which causes an acceleration in the rate of expansion of the universe,
+ an observation first made using distant Type 1A supernovae 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Riess:1998p3211,Perlmutter:1990p3192"
+
+\end_inset
+
+.
+ By measuring the rate of expansion, we can learn about the nature of dark
+ energy which in turn can reveal a deeper understanding of the standard
+ model of cosmology and the origin of the universe.
+\end_layout
+
+\begin_layout Standard
+The rate of expansion of the universe can be determined from a measurement
+ of its size at different epochs.
+ A cosmological ‘standard ruler’ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Blake:2003p3238"
+
+\end_inset
+
+ is an object whose size relative to the universe remains fixed with the
+ expansion of the universe.
+ One such standard ruler is the typical length scale present in ‘baryon
+ acoustic oscillations’ (BAO) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Eisenstein:2005p3244"
+
+\end_inset
+
+.
+ These oscillations are the peaks and troughs in the spatial power distribution
+ of baryonic matter which correspond to over- and under-densities of matter
+ at specific length scales.
+ The pressure resulting from over-densities present in the primordial plasma
+ after the inflationary period created spherical acoustic waves which radiate
+ outward from these over-densities at around half the speed of light.
+\end_layout
+
+\begin_layout Standard
+As the Universe expanded and cooled, the electrons and protons eventually
+ combined into neutral hydrogen atoms.
+ At this point, referred to as recombination, the Universe became essentially
+ transparent to photons, removing the outward pressure and effectively freezing
+ the matter distribution.
+ Over time, some of the dark matter at the centre of the original over-density
+ was attracted to the location of the sound horizon 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Eisenstein:2007p3253"
+
+\end_inset
+
+.
+ Since the BAO are imprinted into the large-scale structure of the Universe
+ they remain unchanged in relation to the size of the Universe.
+ The BAO signal was first measured in the power spectrum of the cosmic microwave
+ background (CMB) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hinshaw:2007p3293"
+
+\end_inset
+
+.
+ If one could measure the BAO signal at a different epoch this would constitute
+ a standard ruler, which would provide a measure of the expansion rate of
+ the universe.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Volumes/Users/danny/Documents/Uni Work - Oxford/Oxford Thesis - blank/figures/oskar_beams/beam - 2m spacing.png
+	lyxscale 30
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $2\lambda$
+\end_inset
+
+ element spacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Volumes/Users/danny/Documents/Uni Work - Oxford/Oxford Thesis - blank/figures/oskar_beams/beam - 2.5m spacing.png
+	lyxscale 30
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{5\lambda}{2}$
+\end_inset
+
+ element spacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Volumes/Users/danny/Documents/Uni Work - Oxford/Oxford Thesis - blank/figures/oskar_beams/product beam - 2m and 2.5m.jpg
+	lyxscale 30
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Product beam
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+An example of attenuation of grating lobes in the product beam of two arrays.
+ In a) and b), we have the radiation power patterns at 
+\begin_inset Formula $300MHz$
+\end_inset
+
+ for a 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ gridded array with spacing 
+\begin_inset Formula $2\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $5\lambda/2$
+\end_inset
+
+, respectively.
+ Sub-figure c) shows the product beam, in which the grating lobe response
+ is attenuated.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

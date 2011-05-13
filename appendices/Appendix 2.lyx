@@ -1,0 +1,404 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass ociamthesis-lyx
+\options a4paper,titlepage
+\use_default_options false
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Derivations
+\end_layout
+
+\begin_layout Section
+Plank's law Derivation
+\end_layout
+
+\begin_layout Paragraph
+From wikipedia 
+\end_layout
+
+\begin_layout Standard
+Conside a cube of side 
+\begin_inset Formula $L$
+\end_inset
+
+ with conducting walls filled with electromagnetic radiation.
+ If there is a small hole in one of the walls, the radiation emitted from
+ the hole will be characteristic of a perfect black body.
+ We will first calculate the spectral energy density wihting the cavity
+ and then determine spectral radiance of the emitted radiation.
+\end_layout
+
+\begin_layout Standard
+At the walls of the cube, the parallel component of the electric field and
+ the orthogonal component of the magnetic field must vanish.
+ Analogous to the wave function of a particle in a box, one finds that the
+ fields are superpositions of periodic functions.
+ The three wavelengths 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{3}$
+\end_inset
+
+, in the three directions orthogonal to the walls can be:
+\begin_inset Formula \begin{equation}
+\lambda_{i}=\frac{2L}{n_{i}},\end{equation}
+
+\end_inset
+
+ where the 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ are integers.
+ For each set of integers 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+there are two linear independent solutions (modes).
+ According to quantum theory, the energy levels of a mode are given by:
+\begin_inset Formula \begin{equation}
+E_{n_{1,},n_{2},n_{3}}(r)=(r+\frac{1}{2})\frac{hc}{2L}\sqrt{n_{1}^{2}+n_{2}^{2}+n_{3}^{2}}.\label{eq:quant_energy_levels}\end{equation}
+
+\end_inset
+
+The quantum number 
+\begin_inset Formula $r$
+\end_inset
+
+ can be interpreted as the number of photons in the mode.
+ The two modes for each set of 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ correspond to the two polarisation states of the photon which has a spin
+ of 1.
+ Note that for 
+\begin_inset Formula $r=0$
+\end_inset
+
+ the energy of the mode is not zero.
+ This vacuum energy of the electromagnetic field is responsible for the
+ Casimir effect (non-zero force between two close parallel plates).
+ In the following we will calculate the internal energy of the box at temperatur
+e 
+\begin_inset Formula $T$
+\end_inset
+
+ relative to the vacuum energy.
+\end_layout
+
+\begin_layout Standard
+According to statistical mechanics, the probability distribution over the
+ energy levels of a particular mode is given by:
+\begin_inset Formula \begin{equation}
+P_{r}=\frac{exp(-\beta E(r))}{Z(\beta)}.\end{equation}
+
+\end_inset
+
+Here, we have defined 
+\begin_inset Formula \begin{equation}
+\beta\triangleq\frac{1}{kT}.\end{equation}
+
+\end_inset
+
+ The denominator 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $Z(\beta)$
+\end_inset
+
+, is the partition function of a single mode and makes 
+\begin_inset Formula $P_{r}$
+\end_inset
+
+ properly normalised:
+\begin_inset Formula \begin{eqnarray}
+Z(\beta) & = & \sum_{r=0}^{\infty}exp[-\beta E(r)]\\
+ & = & \frac{1}{1-exp[-\beta\varepsilon]}.\end{eqnarray}
+
+\end_inset
+
+Here we have implicitly defined 
+\begin_inset Formula \begin{equation}
+\varepsilon\triangleq\frac{hc}{2L}\sqrt{n_{1}^{2}+n_{2}^{2}+n_{3}^{2}},\end{equation}
+
+\end_inset
+
+which is the energy of a single photon.
+ The thermodynamic value of the total energy is the ensemble average for
+ the energy, which is the sum of the microstate energies weighted by their
+ probabilities.
+ This can be expressed in terms of the partition function;
+\begin_inset Formula \begin{eqnarray}
+\left\langle E\right\rangle  & = & -\frac{d\, log(Z)}{d\beta}\\
+ & = & \frac{\varepsilon}{exp(\beta\varepsilon)-1}.\end{eqnarray}
+
+\end_inset
+
+This formula is a special case of the general formula for particles obeying
+ Bose-Einstein statistics, such as photons (which are bosons).
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+The total energy in the box now follows by summing 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $\left\langle E\right\rangle $
+\end_inset
+
+ over all allowed single photon states.
+ This can be done exactly in the termodynamic limit as 
+\begin_inset Formula $L$
+\end_inset
+
+ approaches 
+\begin_inset Formula $\infty$
+\end_inset
+
+.
+ In this limit, 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ becomes continuous and we can then integrate 
+\begin_inset Formula $\left\langle E\right\rangle $
+\end_inset
+
+ over this parameter.
+ To calculate the energy in the box this way, we need to evaluate how many
+ photon states there are in a given energy range.
+ If we write the total number of single photon states with energies between
+ 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon+d\varepsilon$
+\end_inset
+
+ as 
+\begin_inset Formula $g(\varepsilon)d\varepsilon,$
+\end_inset
+
+ where 
+\begin_inset Formula $g(\varepsilon)$
+\end_inset
+
+ is the density of states which we'll evaluate in a moment, then we can
+ write:
+\begin_inset Formula \begin{equation}
+U=\int_{0}^{\infty}\frac{\varepsilon}{exp(\beta\varepsilon)-1}g(\varepsilon)d\varepsilon.\label{eq:quant_total_energy}\end{equation}
+
+\end_inset
+
+To calculate the density of states we rewrite equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quant_energy_levels"
+
+\end_inset
+
+ as follows: 
+\begin_inset Formula \begin{equation}
+\varepsilon\triangleq\frac{hc}{2L}n,\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $n$
+\end_inset
+
+ is the norm of the vector 
+\begin_inset Formula $\vec{n}=(n_{1},n_{2},n_{3})$
+\end_inset
+
+, which is 
+\begin_inset Formula $n=\sqrt{n_{1}^{2}+n_{2}^{2}+n_{3}^{2}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+For every vector 
+\begin_inset Formula $n$
+\end_inset
+
+ with integer components larger than or equal to zero there are two photon
+ states.
+ This means that the number of photon states in a certain region of n-space
+ is twice the volume of that region.
+ An energy range of 
+\begin_inset Formula $d\varepsilon$
+\end_inset
+
+ corresponds to a shell of thickness 
+\begin_inset Formula $dn=(2L/hc)d\varepsilon$
+\end_inset
+
+ in n-space.
+ Because the components of 
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+ have to be positive, this shell spans an octant of a sphere.
+ The number of photon states 
+\begin_inset Formula $g(\varepsilon)d\varepsilon$
+\end_inset
+
+ in an energy range 
+\begin_inset Formula $d\varepsilon$
+\end_inset
+
+ is thus given by:
+\begin_inset Formula \begin{eqnarray}
+g(\varepsilon)d\varepsilon & = & 2\frac{1}{8}4\pi n^{2}dn\\
+ & = & \frac{8\pi L^{3}}{h^{3}c^{3}}\varepsilon^{2}d\varepsilon.\end{eqnarray}
+
+\end_inset
+
+Inserting this into equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quant_total_energy"
+
+\end_inset
+
+ gives:
+\begin_inset Formula \begin{equation}
+U=L^{3}\frac{8\pi}{h^{3}c^{3}}\int_{0}^{\infty}\frac{\varepsilon^{3}}{exp(\beta\varepsilon)-1}d\varepsilon.\end{equation}
+
+\end_inset
+
+From this equation one easily derives the spectral energy density as a function
+ of wavelength 
+\begin_inset Formula $u(\nu,T)$
+\end_inset
+
+:
+\begin_inset Formula \begin{equation}
+\frac{U}{L^{3}}=\int_{0}^{\infty}u(\nu,T)d\nu,\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula \begin{equation}
+u(\nu,T)=\frac{8\pi h\nu^{3}}{c^{3}}\frac{1}{e^{h\nu/kT}-1}.\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $u(\nu,T)$
+\end_inset
+
+ is known as the black body spectrum.
+ It is a spectral energy density function with units of energy per unit
+ wavelength per unit volume.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+Since the radiation is the same in all directions, and propagates at the
+ speed of light, the spectral radiance exiting the small hole is 
+\begin_inset Formula \begin{eqnarray}
+I(\nu,T) & = & \frac{u(\nu,T)c}{4\pi}\\
+ & = & \frac{2h\nu^{3}}{c^{2}}\frac{1}{e^{h\nu/kT}-1}.\end{eqnarray}
+
+\end_inset
+
+Note that dimensional analysis shows that the unit of steradians, shown
+ in the denominator of the left hand side of the above equation, is generated
+ in and carried through the derivation but does not appear in any of the
+ dimensions for any element of the left side of the equation.
+\end_layout
+
+\begin_layout Section
+Sensitivity
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

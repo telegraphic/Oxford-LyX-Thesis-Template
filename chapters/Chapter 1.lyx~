@@ -1,0 +1,1313 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass ociamthesis-lyx
+\options a4paper,titlepage
+\use_default_options false
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Fourier Series
+\end_layout
+
+\begin_layout Standard
+For a function 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ you can write the Fourier Series:
+\begin_inset Formula \[
+f(x)=\sum_{-\infty}^{\infty}c_{n}e^{inx},\]
+
+\end_inset
+
+where the coefficients 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+are given by 
+\begin_inset Formula \[
+c_{n}=\frac{1}{2\pi}\int_{-\pi}^{\pi}f(x)e^{inx}dx\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Maxwell's Equations
+\end_layout
+
+\begin_layout Standard
+There are four of the buggers, and I like them in terms of total charge
+ and current:
+\begin_inset Formula \[
+\begin{array}{cc}
+\nabla.\mathbf{E}=\frac{\rho}{\varepsilon_{0}} & \nabla\times\mathbf{E}=-\frac{\partial\mathbf{B}}{\partial t}\\
+\nabla.\mathbf{B}=0 & \nabla\times\mathbf{B}=\mu_{o}\mathbf{J}+\mu_{0}\varepsilon_{0}\frac{\partial\mathbf{E}}{\partial t}\end{array}\]
+
+\end_inset
+
+Where 
+\series bold
+B 
+\series default
+is the magnetic field, 
+\series bold
+E 
+\series default
+is the electric field and 
+\series bold
+J 
+\series default
+is the total current density.
+ Also, 
+\begin_inset Formula $\varepsilon_{0}$
+\end_inset
+
+ is the permittivity of free space (electric constant) and 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+ is the permeability of free space (magnetic constant).
+ 
+\end_layout
+
+\begin_layout Standard
+It's good to know what these mean in words and integral forms, so:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Gauss' Law: 
+\emph default
+Electric flux through any closed surface is proportional to the enclosed
+ electric charge:
+\begin_inset Formula \[
+\Phi=\oint_{S}\mathbf{E}\, d\mathbf{A}=\frac{Q_{enc}}{\varepsilon_{0}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Gauss' Magnetic Law: 
+\emph default
+Magnetic monopoles don't exist:
+\begin_inset Formula \[
+\oint_{S}\mathbf{B}\, d\mathbf{A}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Faraday's Law of Induction:
+\emph default
+ The induced electromotive force in any closed circuit is equal to the rate
+ of change of the magnetic flux through the circuit:
+\begin_inset Formula \[
+\epsilon=-\frac{d\Phi_{B}}{dt}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Ampere's Law: 
+\emph default
+The relation between integrated magnetic field and current flowing:
+\begin_inset Formula \[
+\oint_{S}\mathbf{B}\, d\mathbf{\ell}=\mu_{0}I_{enc}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That should be enough to get you started.
+ You should really already know it anyway.
+\end_layout
+
+\begin_layout Subsection
+Stokes Parameters
+\end_layout
+
+\begin_layout Standard
+The Stokes parameters 
+\begin_inset Formula $I$
+\end_inset
+
+, 
+\begin_inset Formula $Q$
+\end_inset
+
+, 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ are related to the amplitudes of perpendicular components of the electric
+ field:
+\begin_inset Formula \begin{eqnarray*}
+E_{x} & = & e_{x}(t)cos[\omega t+\delta_{x}]\\
+E_{y} & = & e_{y}(t)cos[\omega t+\delta_{y}]\end{eqnarray*}
+
+\end_inset
+
+by time averages of these electric field parameters:
+\begin_inset Formula \begin{eqnarray*}
+I & = & \left\langle e_{x}^{2}(t)\right\rangle +\left\langle e_{y}^{2}(t)\right\rangle \\
+Q & = & \left\langle e_{x}^{2}(t)\right\rangle -\left\langle e_{y}^{2}(t)\right\rangle \\
+U & = & 2\left\langle e_{x}(t)e_{y}(t)cos[\delta_{x}-\delta_{y}]\right\rangle \\
+V & = & 2\left\langle e_{x}(t)e_{y}(t)sin[\delta_{x}-\delta_{y}]\right\rangle \end{eqnarray*}
+
+\end_inset
+
+The parameter 
+\begin_inset Formula $I$
+\end_inset
+
+ is a measure of the total power in the wave, 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $U$
+\end_inset
+
+ represent the linearly polarised components, and 
+\begin_inset Formula $V$
+\end_inset
+
+ represents the circularly polarised component.
+ The Stokes parameters have the dimensions of flux density, and they combine
+ additively for independent waves.
+ 
+\end_layout
+
+\begin_layout Section
+Interferometry: Synthesis Imaging
+\end_layout
+
+\begin_layout Standard
+The basic idea: an astrophysical phenomenon takes places at location 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+, which causes a time-variable electric field 
+\begin_inset Formula $\mathbf{E}(\mathbf{R},t)$
+\end_inset
+
+.
+ You can split this up into a Fourier Series of 
+\emph on
+quasi-monochromatic components,
+\emph default
+ 
+\begin_inset Formula $\mathbf{E_{\nu}}(\mathbf{R})$
+\end_inset
+
+, which are still complex quantities.
+ The total response of an instrument will be the sum of all 
+\begin_inset Formula $\mathbf{E_{\nu}}(\mathbf{R})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+The Observed Electromagnetic Field
+\end_layout
+
+\begin_layout Standard
+Because Maxwell's equations are linear, we can write the field at a location
+ 
+\begin_inset Formula $\mathbf{r}$
+\end_inset
+
+ as
+\begin_inset Formula \begin{equation}
+\mathbf{E_{\nu}}(\mathbf{r})=\int\int\int P_{\nu}(\mathbf{R},\mathbf{r})\mathbf{E_{\nu}}(\mathbf{R})dx\, dy\, dz.\end{equation}
+
+\end_inset
+
+Where 
+\begin_inset Formula $P_{\nu}(\mathbf{R},\mathbf{r})$
+\end_inset
+
+ is a propagator function which describes how the electric field at 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+ affects the electric field at 
+\begin_inset Formula $\mathbf{r}$
+\end_inset
+
+.
+ This simplifies to
+\begin_inset Formula \begin{equation}
+E_{\nu}(\mathbf{r})=\int\varepsilon_{\nu}(\mathbf{R})\frac{e^{2\pi i\nu\left|\mathbf{R-r}\right|/c}}{\left|\mathbf{R-r}\right|}dS,\label{eq:electric field}\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $dS$
+\end_inset
+
+ is an element of surface area on the 
+\begin_inset Quotes eld
+\end_inset
+
+celestial sphere
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon_{\nu}(\mathbf{R})$
+\end_inset
+
+ is the electric field on its surface.
+ To get to this, we've made the following assumptions:
+\end_layout
+
+\begin_layout Itemize
+All polarisation is ignored, so we can use scalar multiplication instead
+ of tensors;
+\end_layout
+
+\begin_layout Itemize
+The sources are very far away, so all we can measure is 
+\begin_inset Quotes eld
+\end_inset
+
+surface brightness
+\begin_inset Quotes erd
+\end_inset
+
+.
+ We introduce a celestial sphere which is between us and the source, and
+ measure 
+\begin_inset Formula $\varepsilon_{\nu}(\mathbf{R})$
+\end_inset
+
+ on it.
+\end_layout
+
+\begin_layout Itemize
+The space within the celestial sphere is empty, so the propagator is nice
+ and easy and we can use Huygen's Principle.
+\end_layout
+
+\begin_layout Standard
+Equation
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:electric field"
+
+\end_inset
+
+ is the general form of the quasi-monochromatic component of the electric
+ field at frequency 
+\begin_inset Formula $\nu$
+\end_inset
+
+ due to all sources of cosmic electromagnetic radiation.
+ We measure this to investigate the nature of bright things in the universe.
+\end_layout
+
+\begin_layout Subsection
+Spatial Coherence
+\end_layout
+
+\begin_layout Standard
+The correlation of the field at points 
+\begin_inset Formula $\mathbf{r_{1}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{r_{2}}$
+\end_inset
+
+ is defined as
+\begin_inset Formula \begin{equation}
+K_{\nu}(\mathbf{r_{1}},\mathbf{r_{2}})=\left\langle \mathbf{E_{\nu}}(\mathbf{r_{1}})\mathbf{E_{\nu}^{*}}(\mathbf{r_{2}})\right\rangle .\end{equation}
+
+\end_inset
+
+Subbing in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:electric field"
+
+\end_inset
+
+, and assuming that the radiation is not spatially coherent (so 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $\left\langle \mathbf{E_{\nu}}(\mathbf{R_{1}})\mathbf{E_{\nu}^{*}}(\mathbf{R_{2}})\right\rangle =0$
+\end_inset
+
+ if 
+\begin_inset Formula $\mathbf{R_{1}\neq R_{2}}$
+\end_inset
+
+), this becomes
+\begin_inset Formula \begin{equation}
+K_{\nu}(\mathbf{r_{1}},\mathbf{r_{2}})=\int\left\langle \left|\mathbf{\varepsilon_{\nu}}(\mathbf{r_{1}})\right|^{2}\right\rangle \left|\mathbf{R}\right|^{2}\frac{e^{2\pi i\nu\left|\mathbf{R-r_{1}}\right|/c}}{\left|\mathbf{R-r_{1}}\right|}\frac{e^{-2\pi i\nu\left|\mathbf{R-r_{2}}\right|/c}}{\left|\mathbf{R-r_{2}}\right|}dS\end{equation}
+
+\end_inset
+
+Finally, writing 
+\begin_inset Formula $\mathbf{s}$
+\end_inset
+
+ for the unit vector 
+\begin_inset Formula $\mathbf{R}/\left|\mathbf{R}\right|$
+\end_inset
+
+ and 
+\begin_inset Formula $I_{\nu}(\mathbf{s})$
+\end_inset
+
+ for the observed intensity, then neglecting small terms of order 
+\begin_inset Formula $\mathbf{r/R}$
+\end_inset
+
+, and replacing 
+\begin_inset Formula $dS$
+\end_inset
+
+ with 
+\begin_inset Formula $\left|\mathbf{R}\right|^{2}d\Omega$
+\end_inset
+
+, we approximate to
+\begin_inset Formula \begin{equation}
+K_{\nu}(\mathbf{r_{1}},\mathbf{r_{2}})\approx\int I_{\nu}(\mathbf{s})e^{-2\pi i\nu\mathbf{s}.(\mathbf{r_{1}-}\mathbf{r_{2})/c}}d\Omega.\label{eq:spatial coherence fn}\end{equation}
+
+\end_inset
+
+This is known as the 
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\noun default
+\color inherit
+spatial coherence function, 
+\emph default
+or 
+\emph on
+autocorrelation function
+\emph default
+\SpecialChar \@.
+ Note that we want to measure the seperation of 
+\begin_inset Formula $\mathbf{r_{1}}$
+\end_inset
+
+and 
+\begin_inset Formula $\mathbf{r_{2}}$
+\end_inset
+
+, not their absolute position, so we can hold one fixed and move the other
+ around to investigate the correlation properties of the radiation field.
+\end_layout
+
+\begin_layout Subsection
+Fourier Inversion of Synthesis Imaging
+\end_layout
+
+\begin_layout Standard
+The big whoop behind equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:spatial coherence fn"
+
+\end_inset
+
+ is that you can invert it to find the intensity distribution 
+\begin_inset Formula $I_{\nu}$
+\end_inset
+
+.
+ There are two possible assumptions we could choose (and build an interferometer
+ accordingly):
+\end_layout
+
+\begin_layout Paragraph
+Measurements Confined to a Plane
+\end_layout
+
+\begin_layout Standard
+If we only measure in a plane, we can make up a coordinate system, conveniently
+ in terms of the wavelength 
+\begin_inset Formula $\lambda=c/\nu$
+\end_inset
+
+: 
+\begin_inset Formula \[
+\mathbf{r_{1}-r_{2}}=\lambda(u,v,0).\]
+
+\end_inset
+
+In these coordinates, the components of the unit vector 
+\begin_inset Formula $\mathbf{s}=(l,\, m,\,\sqrt{1-l^{2}-m^{2}})$
+\end_inset
+
+.
+ Inserting these into equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:spatial coherence fn"
+
+\end_inset
+
+, we have
+\begin_inset Formula \begin{equation}
+K_{\nu}(u,v,w=0)=\int\int I_{\nu}(l,m)\frac{e^{-2\pi i(ul+vm)}}{\sqrt{1-l^{2}-m^{2}}}dl\, dm,\end{equation}
+
+\end_inset
+
+which is a Fourier transform relation between the spatial coherence function
+ and the intensity.
+\end_layout
+
+\begin_layout Paragraph
+All Sources in a Small Region of Sky
+\end_layout
+
+\begin_layout Standard
+An alternate assumption is that all radiation comes from a small portion
+ of the celestial sphere.
+ We can then neglect small terms by writing 
+\begin_inset Formula $\mathbf{s}=\mathbf{s_{0}}+\sigma$
+\end_inset
+
+, then, stating both 
+\begin_inset Formula $\mathbf{s_{0}}$
+\end_inset
+
+and 
+\begin_inset Formula $\mathbf{s}$
+\end_inset
+
+ are unit vectors we get that:
+\begin_inset Formula \begin{eqnarray*}
+1 & = & \left|\mathbf{s}\right|=\mathbf{s.s}=\mathbf{s_{0}.s_{0}}\\
+ & = & \mathbf{s_{0}.s_{0}+2s_{0}}.\sigma+\sigma.\sigma\\
+ & \approx & 1+2\mathbf{s_{0}}.\sigma\end{eqnarray*}
+
+\end_inset
+
+Now, we can set a coordinate system 
+\begin_inset Formula $\mathbf{s_{0}}=(0,0,1)$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathbf{r_{1}-r_{2}}=(u,v,w).$
+\end_inset
+
+ From this we can get
+\begin_inset Formula \begin{equation}
+K_{\nu}(u,v,w)=\int\int I_{\nu}(l,m)e^{-2\pi i(ul+vm)}dl\, dm,\label{eq:correlation-small-region}\end{equation}
+
+\end_inset
+
+ after absorbing a factor of 
+\begin_inset Formula $e^{-2\pi iw}$
+\end_inset
+
+ into 
+\begin_inset Formula $K_{\nu}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $K_{\nu}$
+\end_inset
+
+ is the coherence function relative to 
+\begin_inset Formula $\mathbf{s}_{\mathbf{0}}$
+\end_inset
+
+, which is called the 
+\emph on
+phase tracking centre.
+\end_layout
+
+\begin_layout Standard
+The good news from this is that we can perform a direct Fourier inversion
+ to get
+\begin_inset Formula \begin{equation}
+I_{\nu}(l,m)=\int\int K_{\nu}(u,v)e^{2\pi i(ul+vm)}du\, dv.\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Effect of Discrete Sampling
+\end_layout
+
+\begin_layout Standard
+So how do we take into account that we're not sampling everywhere on the
+ u-v plane? Simple: we introduce a 
+\emph on
+sampling function 
+\emph default
+
+\begin_inset Formula $S(u,v)$
+\end_inset
+
+ which is zero everywhere we didn't take data.
+ Then we can make up a 
+\emph on
+dirty image:
+\emph default
+
+\begin_inset Formula \begin{equation}
+I_{\nu}^{D}(l,m)=\int\int K_{\nu}(u,v)S(u,v)e^{2\pi i(ul+vm)}du\, dv,\end{equation}
+
+\end_inset
+
+ which is related to the desired intensity distribution by the convolution
+ theorem
+\begin_inset Formula \begin{equation}
+I_{\nu}^{D}=I_{\nu}*B.\end{equation}
+
+\end_inset
+
+ Here, 
+\begin_inset Formula $B$
+\end_inset
+
+ is the 
+\emph on
+synthesized beam
+\emph default
+, or 
+\emph on
+point-spread function 
+\emph default
+that corresponds to the sampling function 
+\begin_inset Formula $S(u,v)$
+\end_inset
+
+.
+ There are methods for undoing this convolution.
+\end_layout
+
+\begin_layout Paragraph
+Effect of Element Reception Pattern
+\end_layout
+
+\begin_layout Standard
+Because interferometer elements aren't point sized, they are sensitive to
+ the direction of arrival of radiation.
+ So again, we introduce an additional term 
+\begin_inset Formula $\mathcal{A}_{\nu}(l,m)$
+\end_inset
+
+, which is the 
+\emph on
+primary beam
+\emph default
+, or 
+\emph on
+normalised reception pattern.
+ 
+\emph default
+Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-visibility"
+
+\end_inset
+
+ then becomes
+\begin_inset Formula \begin{equation}
+K_{\nu}(u,v,w)=\int\int\mathcal{A}_{\nu}(l,m)I_{\nu}(l,m)e^{-2\pi i(ul+vm)}dl\, dm,\label{eq:complex-visibility}\end{equation}
+
+\end_inset
+
+which we call the 
+\emph on
+complex visibility.
+
+\emph default
+ It actually turns out that the reception pattern is a boon, because it
+ makes the 
+\begin_inset Quotes eld
+\end_inset
+
+small patch of sky
+\begin_inset Quotes erd
+\end_inset
+
+ assumption a reality, as in most telescopes this rapidly falls to zero
+ outside the phase tracking centre.
+\end_layout
+
+\begin_layout Subsection
+Extensions to the Basic Theory
+\end_layout
+
+\begin_layout Standard
+There are two noteworthy extensions to this basic theory of synthesis imaging
+ that we should run through.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Spectroscopy
+\end_layout
+
+\begin_layout Standard
+If we're looking at a spectral line, chances are that it'll change quite
+ rapidly as a function of frequency.
+ The best way to deal with this is by using digital stuff and calculate
+ the correlation as a function of lag.
+ We add in the lag as a complex phase shift:
+\begin_inset Formula \[
+V(u,v,\tau)=\int V(u,v,\nu)e^{2\pi i\tau\nu}d\nu,\]
+
+\end_inset
+
+which is an easily inverted Fourier transform.
+ In terms of digitised data, we have to deal with 
+\begin_inset Formula \[
+V(u,v,j\Delta\nu)=\Sigma_{k}V(u,v,k\Delta\tau)e^{-2\pi ijk\Delta\nu\Delta\tau},\]
+
+\end_inset
+
+ so require some Fourier sampling theory.
+ Examining this, we see the replication interval is 
+\begin_inset Formula $1/\Delta\tau$
+\end_inset
+
+, which means that we have to restrict our band of frequencies 
+\emph on
+before
+\emph default
+ sampling to a total bandwidth less than this, to avoid losing information
+ in the sampling process.
+ Normally you'd expect a 
+\begin_inset Formula $1/2\Delta\tau$
+\end_inset
+
+ requirement; the factor of 2 comes in because we've got a complex quantity.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Polarimetry
+\end_layout
+
+\begin_layout Standard
+Earlier, we decided to ignore polarisation so we can work with scalar fields.
+ When looking at electromagnetic noise, polarisation is defined by a correlation
+ process: you pick two orthogonal polarisations and analyse the tge radiation
+ of the quasi-monochromatic wave into the components of these two polarisations.
+ For example, if we pick right and left circular polarisation as our orthogonal
+ modes, we can write a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix of correlations.
+ We can match this up to the Stokes parameters such that
+\begin_inset Formula \[
+\left(\begin{array}{cc}
+RR^{*} & RL^{*}\\
+LR^{*} & LL^{*}\end{array}\right)=\left(\begin{array}{cc}
+I+V & Q+iU\\
+Q-iU & I-V\end{array}\right)\]
+
+\end_inset
+
+which is useful for calibration and retrieving polarisation data.
+\end_layout
+
+\begin_layout Section
+Astronomical Survey Parameters
+\end_layout
+
+\begin_layout Itemize
+Matching engineering specifications to science cases
+\end_layout
+
+\begin_layout Subsection
+System Temperature
+\end_layout
+
+\begin_layout Standard
+Note: I disagree with Pozar's claim that this 
+\emph on
+is
+\emph default
+ the Planck's black body radiation law, and prefer the term 
+\emph on
+Nyquist-Johnson formula
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nyquist:1928p3705,Johnson:1928p3711"
+
+\end_inset
+
+.
+ Assuming equipartition and assigning a total energy per degree of freedom
+ of 
+\begin_inset Formula $kT$
+\end_inset
+
+, the result is
+\begin_inset Formula \[
+E^{2}d\nu=4RkTd\nu.\]
+
+\end_inset
+
+If we take the energy per degree of freedom to be that arising from Planck's
+ baldy body radiation law, then we arrive with
+\begin_inset Formula \[
+E_{\nu^{2}}d\nu=\frac{4R_{\nu}hd\nu}{e^{h\nu/kT}-1}.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+From 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pozar2005:Ch10"
+
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+Thermal noise is the most basic type of noise, being caused by thermal vibration
+ of bound charges.
+ Also known as Johnson or Nyquist noise.
+ Consider a resistor at a temperature 
+\begin_inset Formula $T$
+\end_inset
+
+ degrees kelvin (
+\begin_inset Formula $K$
+\end_inset
+
+).
+ The electrons in this resistor are in random motion, with a kinetic energy
+ that is proportional to the temperature, 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ These random motions produce small, random voltage fluctuations at the
+ resistor terminals, and while the voltage has zero average value, it has
+ a nonzero rms value given by Planck's black body radiation law,
+\begin_inset Formula \begin{equation}
+V_{n}=\sqrt{\frac{4hf_{c}R\Delta\nu}{e^{hf_{c}/kT}-1}},\label{eq:planck_bb}\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula \[
+V_{n}=\sqrt{\frac{4hf_{c}r\Delta\nu}{e^{hf_{c}/kT}-}}\]
+
+\end_inset
+
+where 
+\begin_inset Formula $h=6.626\times10^{-34}Js$
+\end_inset
+
+ is Plank's constant; 
+\begin_inset Formula $k=1.380\times10^{-23}JK^{-1}$
+\end_inset
+
+ is Boltzmann's constant; 
+\begin_inset Formula $T$
+\end_inset
+
+ is the temperature in degrees kelvin (
+\begin_inset Formula $K$
+\end_inset
+
+); 
+\begin_inset Formula $B$
+\end_inset
+
+ is the bandwidth of the system in 
+\begin_inset Formula $Hz$
+\end_inset
+
+; 
+\begin_inset Formula $f$
+\end_inset
+
+ is the centre frequency of the bandwidth in 
+\begin_inset Formula $Hz$
+\end_inset
+
+; and, 
+\begin_inset Formula $R$
+\end_inset
+
+ is the resistance, in 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ At microwave frequencies the above case can be simplified by making use
+ of the fact that for microwave frequencies 
+\begin_inset Formula $hf\ll kT$
+\end_inset
+
+.
+ Using the first two terms of a Taylor series expansion for the exponential
+ gives
+\begin_inset Formula \begin{equation}
+e^{hf/kT}-1\simeq\frac{hf}{kT}\end{equation}
+
+\end_inset
+
+so that Eq
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:planck_bb"
+
+\end_inset
+
+ reduces to 
+\begin_inset Formula \begin{equation}
+V_{n}=\sqrt{4kTR\Delta\nu}.\end{equation}
+
+\end_inset
+
+This is the 
+\emph on
+Raleigh-Jeans approximation
+\emph default
+, and is the form most commonly used in microwave work.
+ For very high frequencies or very low temperatures, however, this approximation
+ may be invalid, in which case Eq
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:planck_bb"
+
+\end_inset
+
+ should be used.
+ 
+\end_layout
+
+\begin_layout Standard
+Connecting an (ideal) load resistor 
+\begin_inset Formula $R$
+\end_inset
+
+ results in maximum power transfer 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ from the noisy resistor
+\begin_inset Formula \begin{eqnarray}
+P_{n} & = & (\frac{V_{n}}{2R})^{2}R\\
+ & = & kT\Delta\nu.\end{eqnarray}
+
+\end_inset
+
+This important result gives the maximum available noise power from the noisy
+ resistor at temperature 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If an arbitrary source of noise (thermal or nonthermal) is 
+\begin_inset Quotes eld
+\end_inset
+
+white
+\begin_inset Quotes erd
+\end_inset
+
+, so that the noise power is not a strong function of frequency, it can
+ be modelled as an equivalent thermal noise source, and characterised with
+ an 
+\emph on
+equivalent noise temperature.
+
+\emph default
+ For a noise power of 
+\begin_inset Formula $N$
+\end_inset
+
+, the equivalent temperature 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+ is 
+\begin_inset Formula \begin{equation}
+T_{e}=\frac{N}{k\Delta\nu}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Measuring Noise Temperature
+\end_layout
+
+\begin_layout Standard
+A common technique for measuring the equivalent noise temperature is the
+ 
+\emph on
+Y-factor method.
+ 
+\emph default
+In this technique, two matched loads at different temperatures 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ are connected to the device under test (DUT), and the output power is measured
+ for each case, 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+, respectively.
+ The output power consists of noise power generated by the DUT and the noise
+ power from the source resistor.
+ Thus we have
+\begin_inset Formula \begin{eqnarray}
+N_{1} & = & GkT_{1}\Delta\nu+GkT_{e}\Delta\nu,\\
+N_{2} & = & GkT_{2}\Delta\nu+GkT_{e}\Delta\nu,\end{eqnarray}
+
+\end_inset
+
+which are two equations for the two unknownss, 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+ and 
+\begin_inset Formula $G\Delta\nu$
+\end_inset
+
+ (the gain-bandwidth product of the amplifier.
+ Define the 
+\begin_inset Formula $Y$
+\end_inset
+
+-factor as
+\begin_inset Formula \begin{equation}
+Y=\frac{N_{1}}{N_{2}}=\frac{T_{1}+T_{e}}{T_{2}+T_{e}}>1\end{equation}
+
+\end_inset
+
+which is determined via the power measurements.
+ Then we can solve for the equivalent noise temperature, which will be 
+\begin_inset Formula \begin{equation}
+T_{2}=\frac{T_{1}-YT_{2}}{Y-1}\end{equation}
+
+\end_inset
+
+in terms of the load temperatures and the 
+\begin_inset Formula $Y$
+\end_inset
+
+-factor.
+\end_layout
+
+\begin_layout Standard
+An alternative characterisation is the 
+\emph on
+noise figure
+\emph default
+ of the DUT, which is a measure of the degradation in the signal-to-noise
+ ratio between the input and the output of the component.
+ The noise figure, 
+\begin_inset Formula $F$
+\end_inset
+
+, is defined as 
+\begin_inset Formula \begin{equation}
+F=\frac{S_{i}/N_{i}}{S_{0}/N_{0}}\ge1,\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ are the input signal and noise powers, and 
+\begin_inset Formula $S_{0},$
+\end_inset
+
+ 
+\begin_inset Formula $N_{0}$
+\end_inset
+
+ are the output signal and noise powers.
+ By definition, the input noise power is assumed to be the noise power resulting
+ from a matched resistor at 
+\begin_inset Formula $T_{0}=290K$
+\end_inset
+
+ ; that is, 
+\begin_inset Formula $N_{i}=kT_{0}\Delta\nu$
+\end_inset
+
+.
+ The noise figure is related to the effective temperature by the equation
+\begin_inset Formula \begin{eqnarray}
+T_{e} & = & T_{0}(F-1)\\
+ & = & T_{0}(10^{F_{dB}/10}-1),\end{eqnarray}
+
+\end_inset
+
+if the noise figure is quoted in decibels (i.e.
+ 
+\begin_inset Formula $F_{dB}$
+\end_inset
+
+ ).
+\end_layout
+
+\begin_layout Paragraph
+Noise Figure of a Cascaded System
+\end_layout
+
+\begin_layout Standard
+In a typical microwave system the input signal travels through a cascade
+ of many different components, each of which may degrade the dignal-to-noise
+ ratio to some degree.
+ If we know the noise figure (or noise temperature) of the individual stages,
+ we can determine the noise figure (or noise temperature) of the cascade
+ connection of stages.
+ We will see that the noise performance of the first stage is usually the
+ most critical, an interesting result that is very important in practice.
+\end_layout
+
+\begin_layout Standard
+Consider the cascade of two components, having gains 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, noise figures 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+, and noise temperature 
+\begin_inset Formula $T_{e1}$
+\end_inset
+
+ and 
+\begin_inset Formula $T_{e2}$
+\end_inset
+
+.
+ We wish to find the overall noise figure and noise temperature of the cascade,
+ as if it were a single component.
+\end_layout
+
+\begin_layout Standard
+Using noise temperatures, the noise power at the output of the first stage
+ is
+\begin_inset Formula \begin{equation}
+N_{1}=G_{1}kT_{0}\Delta\nu+G_{1}kT_{e1}\Delta\nu,\end{equation}
+
+\end_inset
+
+the noise power at the output of the second stage is
+\begin_inset Formula \begin{eqnarray}
+N_{0} & = & G_{2}N_{1}+G_{2}kT_{e2}\Delta\nu\label{eq:noise_two_stg}\\
+ & = & G_{1}G_{2}k\Delta\nu(T_{0}+T_{e1}+\frac{1}{G_{1}}T_{e2}).\end{eqnarray}
+
+\end_inset
+
+For the equivalent system (NOTE: see figure 10.9), we have 
+\begin_inset Formula \begin{equation}
+N_{0}=G_{1}G_{2}k\Delta\nu(T_{cas}+T_{0}),\end{equation}
+
+\end_inset
+
+so comparison with Eq
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:noise_two_stg"
+
+\end_inset
+
+ gives the noise temperature of the cascade system as 
+\begin_inset Formula \begin{equation}
+T_{cas}=T_{e1}+\frac{1}{G_{1}}T_{e2}.\end{equation}
+
+\end_inset
+
+Thus the noise characteristics of a cascaded system are dominated by the
+ characteristics of the first stage, since the effect of the second stage
+ is reduced by the gain of the first.
+ We can generalise this result to an arbitrary number of stages, such that
+\begin_inset Formula \begin{equation}
+T_{cas}=T_{e1}+\frac{T_{e2}}{G_{1}}+\frac{T_{e3}}{G_{1}G_{2}}+...\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+System Sensitivity
+\end_layout
+
+\begin_layout Subsection
+Angular Resolution
+\end_layout
+
+\begin_layout Subsection
+Survey Speed
+\end_layout
+
+\begin_layout Section
+The Square Kilometre Array
+\end_layout
+
+\begin_layout Standard
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dewdney:2009p1690"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Key Science Programs
+\end_layout
+
+\begin_layout Subsection
+Aperture Arrays
+\end_layout
+
+\begin_layout Section
+Thesis Overview
+\end_layout
+
+\end_body
+\end_document
