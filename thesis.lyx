@@ -8,6 +8,9 @@
 % By Keith A. Gillow <gillow@maths.ox.ac.uk>
 % modified for LyX by Danny Price <danny.price@astro.ox.ac.uk>
 
+% Use graphics package
+\usepackage{graphicx}
+
 % The crest on the titlepage can be set by changing the def below.
 % You can get others from http://www.ox.ac.uk/branding_toolkit/
 \def\crest{{\includegraphics{titlepage/beltcrest.pdf}}}
@@ -206,7 +209,7 @@ filename "chapters/Chapter 2.lyx"
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\bibname}{References}
+\newcommand{\bibname}{References}
 \end_inset
 
 
