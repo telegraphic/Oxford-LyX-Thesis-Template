@@ -71,6 +71,11 @@ status open
 
 \begin_layout Plain Layout
 
+% You shouldn't have to touch anything in this box.
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
 baselineskip=18pt plus1pt
