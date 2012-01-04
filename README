@@ -20,11 +20,11 @@ Firstly, you'll need to have a working copy of LaTeX and LyX. Next
 
 The steps will vary depending on your operating system and LaTeX setup. For example, for me on my Mac:
 1. Copy over the ociamthesis-lyx.cls to
-	/usr/local/texlive/2008/texmf-dist/tex/latex/
+	 /Users/danny/Library/texmf/tex/latex
 2. From the terminal run 
-	sudo texhash
+	 sudo texhash
 3. Copy over the ociamthesis-lyx.layout to
-	/Users/[username]/Library/Application Support/LyX-1.6/layouts
+	 /Users/[username]/Library/Application Support/LyX-1.6/layouts
 4. Go to menu LyX > reconfigure
 5. Restart and you'll be ready
 
