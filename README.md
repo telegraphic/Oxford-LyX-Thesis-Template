@@ -19,16 +19,16 @@ The steps will vary depending on your operating system and LaTeX setup. For exam
 ### Mac OS X
 
 1. Copy over the ociamthesis-lyx.cls to
-
-	 > /Users/danny/Library/texmf/tex/latex
+    
+	/Users/danny/Library/texmf/tex/latex
 	 
 2. From the terminal run 
 
-	 > sudo texhash
+    sudo texhash
 	 
 3. Copy over the ociamthesis-lyx.layout to
 
-	 > /Users/[username]/Library/Application Support/LyX-1.6/layouts
+    /Users/[username]/Library/Application Support/LyX-1.6/layouts
 	 
 4. Go to menu LyX > reconfigure
 5. Restart and you'll be ready
@@ -39,21 +39,21 @@ Linux directions courtesy @NDavidBrown:
 
 1. Copy over ociamthesis-lyx.cls:
 
-	> cd /usr/share/texmf/tex/latex
-	> sudo mkdir ociam-lyx
-	> sudo cp ~/[where_you_downloaded_it]/files_to_copy/ociamthesis-lyx.cls ociam-lyx
+    cd /usr/share/texmf/tex/latex
+    sudo mkdir ociam-lyx
+    sudo cp ~/[where_you_downloaded_it]/files_to_copy/ociamthesis-lyx.cls ociam-lyx
 	
 2. From the terminal run
 
-	> sudo texhash
+    sudo texhash
 	
 3. Copy over the ociamthesis.lyx layout to
 
-	> cp ~/[where_you_downloaded_it]/files_to_copy/ociamthesis-lyx.layout ~/.lyx/layouts/
+    cp ~/[where_you_downloaded_it]/files_to_copy/ociamthesis-lyx.layout ~/.lyx/layouts/
 	
 4. Then in lyx:
 
-	> Tools -> Reconfigure
+    Tools -> Reconfigure
 
 ### Windows
 
@@ -65,7 +65,7 @@ I don't have Windows, so you'll need to figure out steps 1-3 yourself (until som
 Q. How do I change the logo on the titlepage to my university?
 A. First, get a copy of your logo in PDF format, preferably square, and put it into titlepage/mylogo.pdf. Then, go into Document > settings > Latex preamble and change the line:
 
-	> \def\crest{{\includegraphics{titlepage/beltcrest.pdf}}}
+    \def\crest{{\includegraphics{titlepage/beltcrest.pdf}}}
 	
 to point to your new logo file. 
 
