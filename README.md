@@ -89,5 +89,7 @@ A. I've edited the ociamthesis.cls and removed all the metafont definitions beca
 Q. Is there an equivalent ociamthesis.cls for Humanities?
 A. Yes, there is a latex class out there: S. Evans has modified the ociamthesis.cls to make it conform to the regulations for Humanities. This can be found online at http://samuelevansresearch.org/main/2010/05/oxford-thesis-latex-template/. He's added a definition to ociamthesis.cls called 'frontpages' which adds a few necessary bells and whistles.
 
+Q . How can I change the title page to my requirements?
+A. This isn't particularly easy: https://github.com/telegraphic/Oxford-LyX-Thesis-Template/wiki/Custom-titlepages
 
 Good luck, email me with any questions at danny.price@astro.ox.ac.uk and I'll try and help out!
