@@ -68,7 +68,7 @@ I don't have Windows, so you'll need to figure out steps 1-3 yourself (until som
 
 ## Frequently Asked Questions
 
-Q. How do I change the logo on the titlepage to my university?
+#### Q. How do I change the logo on the titlepage to my university?
 A. First, get a copy of your logo in PDF format, preferably square, and put it into titlepage/mylogo.pdf. Then, go into Document > settings > Latex preamble and change the line:
     ```
     \def\crest{{\includegraphics{titlepage/beltcrest.pdf}}}
@@ -76,20 +76,20 @@ A. First, get a copy of your logo in PDF format, preferably square, and put it i
     
 to point to your new logo file. 
 
-Q. Where is my LyX user directory?
+#### Q. Where is my LyX user directory?
 A. The location of the LyX user directory depends upon the system LyX is installed on. Some common locations are below.
     * Linux and other Unix-like systems: usually found at ~/.lyx, where ~ is your home directory.
     * Mac OS X: ~/Library/Application Support/LyX-<VERSION>/
     * Windows Vista / Windows 7: usually at C:\Users\[your username]\AppData\Roaming\lyx<VERSION>\ (note: this is if you installed LyX for all users)
 (from http://wiki.lyx.org/LyX/UserDir)
 
-Q. What are the main differences between the ociamthesis-lyx.cls and the original one?
+#### Q. What are the main differences between the ociamthesis-lyx.cls and the original one?
 A. I've edited the ociamthesis.cls and removed all the metafont definitions because from experience they complicate things -- and hey, who uses metafonts nowadays? I also moved the titlepage logo definition to the document preamble. I felt these changes made it a derivative so appended -lyx to the filename.
 
-Q. Is there an equivalent ociamthesis.cls for Humanities?
+#### Q. Is there an equivalent ociamthesis.cls for Humanities?
 A. Yes, there is a latex class out there: S. Evans has modified the ociamthesis.cls to make it conform to the regulations for Humanities. This can be found online at http://samuelevansresearch.org/main/2010/05/oxford-thesis-latex-template/. He's added a definition to ociamthesis.cls called 'frontpages' which adds a few necessary bells and whistles.
 
-Q . How can I change the title page to my requirements?
+Q. How can I change the title page to my requirements?
 A. This isn't particularly easy: https://github.com/telegraphic/Oxford-LyX-Thesis-Template/wiki/Custom-titlepages
 
 Good luck, email me with any questions at danny.price@astro.ox.ac.uk and I'll try and help out!
