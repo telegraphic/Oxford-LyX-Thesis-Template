@@ -8,13 +8,16 @@
 % By Keith A. Gillow <gillow@maths.ox.ac.uk>
 % modified for LyX by Danny Price <danny.price@astro.ox.ac.uk>
 
+% Use graphics package
+\usepackage{graphicx}
+
 % The crest on the titlepage can be set by changing the def below.
 % You can get others from http://www.ox.ac.uk/branding_toolkit/
 \def\crest{{\includegraphics{titlepage/beltcrest.pdf}}}
 %\def\crest{{\includegraphics{titlepage/beltcrest-gold.pdf}}}
 
 % Set the text on the title page here
-\title{Sparse Aperture Arrays \\ for Neutral Atomic Hydrogen Surveys}
+\title{Sparse Aperture Arrays for Green Legs and Spam with a Multidimensional Approach}
 \author{Danny Price}
 \college{Worcester College}
 %\renewcommand{\submittedtext}{change the default text here if needed}
@@ -94,9 +97,6 @@ status open
 
 \begin_layout Plain Layout
 
-
-\backslash
-baselineskip=18pt plus1pt
 \end_layout
 
 \begin_layout Plain Layout

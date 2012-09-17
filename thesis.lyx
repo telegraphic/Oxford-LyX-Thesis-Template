@@ -17,9 +17,10 @@
 %\def\crest{{\includegraphics{titlepage/beltcrest-gold.pdf}}}
 
 % Set the text on the title page here
-\title{Sparse Aperture Arrays \\ for Neutral Atomic Hydrogen Surveys}
+\title{Sparse Aperture Arrays for Green Legs and Spam with a Multidimensional Approach}
 \author{Danny Price}
 \college{Worcester College}
+\university{University of Oxford}
 %\renewcommand{\submittedtext}{change the default text here if needed}
 \degree{Doctor of Philosophy}
 \degreedate{Trinity 2011}
@@ -97,9 +98,6 @@ status open
 
 \begin_layout Plain Layout
 
-
-\backslash
-baselineskip=18pt plus1pt
 \end_layout
 
 \begin_layout Plain Layout

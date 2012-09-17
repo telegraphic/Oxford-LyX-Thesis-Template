@@ -4,7 +4,7 @@
 % Version 1.0 released 26/11/1997
 %-------------------------- identification ---------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ociamthesis}[2010/03/20 v2.1 OCIAM thesis class]
+\ProvidesClass{ociamthesis-lyx}[2010/03/20 v2.1 OCIAM thesis class]
 %-------------------------- initial code -----------------------
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 \ProcessOptions\relax
@@ -28,35 +28,8 @@
 \def\degree#1{\gdef\@degree{#1}}
 % The name of your Oxford college (e.g. Christ Church, Pembroke)
 \def\college#1{\gdef\@college{#1}}
-
-
-%
-% CRESTS
-%
-
-% Traditional Oxford crest
-
-%Using latex metafont (Mathematical Institute system)
-\font\crestfont=oxcrest40 scaled\magstep3
-\def\crest{{\crestfont \char1}}
-%For comlab system replace 1st line above with
-%\font\crestfont=crest scaled\magstep3
-
-%To use an EPS image instead obtain suitable crest.eps file and
-%uncomment next line
-%\def\crest{{\includegraphics{crest.eps}}}
-
-% New Oxford Belt crest
-
-%Using latex metafont (Mathematical Institute system)
-\font\beltcrestfont=oxbeltcrest
-\def\beltcrest{{\beltcrestfont \char0}}
-%For comlab system replace 1st line above with
-%\font\beltcrestfont=newcrest
-
-%To use an EPS image instead obtain suitable beltcrest.eps file and
-%uncomment next line
-%\def\beltcrest{{\includegraphics{beltcrest.eps}}}
+% The name of your University
+\def\university#1{\gdef\@university{#1}}
 
 
 %
@@ -97,7 +70,7 @@
 {\large \vspace*{1ex}
     {{\@college} \par}
 \vspace*{1ex}
-    {University of Oxford \par}
+    {{\@university} \par}
 \vspace*{25mm}
     {{\submittedtext} \par}
 \vspace*{1ex}

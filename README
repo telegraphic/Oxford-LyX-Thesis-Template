@@ -1,14 +1,10 @@
------------------------------
-OCIAM Thesis for LyX - readme
-------------------------------
+# OCIAM Thesis for LyX - readme
 
 These files form a LyX skeleton structure for the OCIAM Thesis class by Keith A. Gillow <gillow@maths.ox.ac.uk>, which is available online at http://www.maths.ox.ac.uk/help/faqs/latex/thesisclass. Here, I have modified the class file slightly and transposed it into a version that plays nicely with LyX.
 
 I give no license to do anything with it, warranty or guarantee that it will work. Use at your own risk. Enjoy responsibly. Oxford's "visual identity" is legally protected, the logo is a trademark, and they have very specific branding rules, which can be found at http://www.ox.ac.uk/branding_toolkit/. That's all the issues I can think of, so onto installation...
 
--------------
-Installation
--------------
+## Installation
 
 Firstly, you'll need to have a working copy of LaTeX and LyX. Next
 
@@ -19,6 +15,9 @@ Firstly, you'll need to have a working copy of LaTeX and LyX. Next
 5. Restart LyX and you should be ready to go.
 
 The steps will vary depending on your operating system and LaTeX setup. For example, for me on my Mac:
+
+### Mac OS X
+
 1. Copy over the ociamthesis-lyx.cls to
 	 /Users/danny/Library/texmf/tex/latex
 2. From the terminal run 
@@ -28,13 +27,27 @@ The steps will vary depending on your operating system and LaTeX setup. For exam
 4. Go to menu LyX > reconfigure
 5. Restart and you'll be ready
 
-You'll have to do the tinkering yourself if you're on Windows or Linux!
+### Ubuntu (Linux)
 
---------------------------
-Frequently Asked Questions
---------------------------
+Linux directions courtesy @NDavidBrown:
 
-As nobody has actually ever asked me a question about this, here's a few questions I thought might come up:
+1. Copy over ociamthesis-lyx.cls:
+	cd /usr/share/texmf/tex/latex
+	sudo mkdir ociam-lyx
+	sudo cp ~/[where_you_downloaded_it]/files_to_copy/ociamthesis-lyx.cls ociam-lyx
+2. From the terminal run
+	sudo texhash
+3. Copy over the ociamthesis.lyx layout to
+	cp ~/[where_you_downloaded_it]/files_to_copy/ociamthesis-lyx.layout ~/.lyx/layouts/
+4. Then in lyx:
+	Tools -> Reconfigure
+
+### Windows
+
+I don't have Windows, so you'll need to figure out steps 1-3 yourself (until someone updates this)
+
+
+## Frequently Asked Questions
 
 Q. How do I change the logo on the titlepage to my university?
 A. First, get a copy of your logo in PDF format, preferably square, and put it into titlepage/mylogo.pdf. Then, go into Document > settings > Latex preamble and change the line:
