@@ -31,7 +31,7 @@ The steps will vary depending on your operating system and LaTeX setup. For exam
 3. Copy over the ociamthesis-lyx.layout to
     ```
     /Users/[username]/Library/Application Support/LyX-1.6/layouts
-	```
+    ```
      
 4. Go to menu LyX > reconfigure
 5. Restart and you'll be ready
@@ -42,24 +42,26 @@ Linux directions courtesy @NDavidBrown:
 
 1. Copy over ociamthesis-lyx.cls:
     ```
-    cd /usr/share/texmf/tex/latex
-    sudo mkdir ociam-lyx
-    sudo cp ~/[where_you_downloaded_it]/files_to_copy/ociamthesis-lyx.cls ociam-lyx
-	```
+    mkdir -p ~/texmf/tex/latex
+    cp ~/path/to/files_to_copy/ociamthesis-lyx.cls ~/texmf/tex/latex
+    ```
     
 2. From the terminal run
     ```
     sudo texhash
-	```
+    ```
     
 3. Copy over the ociamthesis.lyx layout to
     ```
-    cp ~/[where_you_downloaded_it]/files_to_copy/ociamthesis-lyx.layout ~/.lyx/layouts/
-	```
+    cp /path/to/files_to_copy/ociamthesis-lyx.layout ~/.lyx/layouts/
+    ```
+
 4. Then in lyx:
     ```
     Tools -> Reconfigure
+    Document -> Settings -> Document Class -> ociamthesis-lyx
     ```
+    You will then need to restart lyx.
     
 ### Windows
 
