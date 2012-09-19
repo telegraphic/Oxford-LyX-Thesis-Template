@@ -65,8 +65,12 @@ Linux directions courtesy @NDavidBrown:
     
 ### Windows
 
-I don't have Windows, so you'll need to figure out steps 1-3 yourself (until someone updates this)
-
+I don't have Windows, so you'll need to figure out steps 1-3 yourself (until someone updates this).
+For Windows 7, @Katuyci suggests copying ociamthesis-lyx.cls to
+    ```
+    C:\ProgramData\MiKTeX\[your version number of software]\tex\latex\
+    ```
+You'll need to select "show hidden files" in folder and search options to allow you to do this.
 
 ## Frequently Asked Questions
 
