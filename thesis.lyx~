@@ -20,6 +20,7 @@
 \title{Sparse Aperture Arrays for Green Legs and Spam with a Multidimensional Approach}
 \author{Danny Price}
 \college{Worcester College}
+\university{University of Oxford}
 %\renewcommand{\submittedtext}{change the default text here if needed}
 \degree{Doctor of Philosophy}
 \degreedate{Trinity 2011}
@@ -182,6 +183,22 @@ status open
 end{romanpages}
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Choose your spacing (2.0 is double, 1.0 is single)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setstretch{2}
+\end_layout
+
 \end_inset
 
 
@@ -206,7 +223,7 @@ filename "chapters/Chapter 2.lyx"
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\bibname}{References}
+\newcommand{\bibname}{References}
 \end_inset
 
 

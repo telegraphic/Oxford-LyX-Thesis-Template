@@ -17,7 +17,7 @@
 %\def\crest{{\includegraphics{titlepage/beltcrest-gold.pdf}}}
 
 % Set the text on the title page here
-\title{Sparse Aperture Arrays for Green Legs and Spam with a Multidimensional Approach}
+\title{Radio Astronomy Instrumentation for Redshifted Hydrogen Line Science}
 \author{Danny Price}
 \college{Worcester College}
 \university{University of Oxford}
@@ -181,6 +181,22 @@ status open
 
 \backslash
 end{romanpages}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Choose your spacing (2.0 is double, 1.0 is single)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setstretch{2}
 \end_layout
 
 \end_inset
