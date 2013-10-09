@@ -65,12 +65,17 @@ Linux directions courtesy @NDavidBrown:
     
 ### Windows
 
-I don't have Windows, so you'll need to figure out steps 1-3 yourself (until someone updates this).
-For Windows 7, @Katuyci suggests copying ociamthesis-lyx.cls to
-    ```
-    C:\ProgramData\MiKTeX\[your version number of software]\tex\latex\
-    ```
-You'll need to select "show hidden files" in folder and search options to allow you to do this.
+Directions courtesy @NDavidBrown:
+
+1. Copy `ociamthesis-lyx.layout` to `C:\Users\<username>\AppData\Roaming\LyX<version>\layouts`.
+
+2. Copy `ociamthesis-lyx.cls` to `C:\Users\<username>\AppData\Roaming\MiKTeX\<version>\tex\latex`. 
+   You may need to create this directory manually, though the parent `tex` directory should already be present.
+
+Run `Start` -> `MikTex` -> `Settings` (or on Windows 8: `<Press Windows Key>`, Type 'settings', choose the non-admin 
+   `Settings` item with MikTex icon) then click `Refresh FNDB`.
+
+Now load Lyx and run: `Tools` -> `Reconfigure`. Once complete you'll receive a notification to restart Lyx. Do so then load your `thesis.lyx` and go to `Document` -> `Settings`. In `Document Class` (item in left sidebar list) In the `Document class` dropdown choose `ociamthesis-lyx` (items are in alphabetical order).
 
 ## Frequently Asked Questions
 
