@@ -79,6 +79,9 @@ Now load Lyx and run: `Tools` -> `Reconfigure`. Once complete you'll receive a n
 
 ## Frequently Asked Questions
 
+#### Q. How do I know if I installed the document class correctly?
+The 'litmus test' is simply going to Document -> Settings -> Document Class and seeing that ociamthesis-lyx is available for selection.
+
 #### Q. How do I change the logo on the titlepage to my university?
 A. First, get a copy of your logo in PDF format, preferably square, and put it into titlepage/mylogo.pdf. Then, go into Document > settings > Latex preamble and change the line:
     ```
