@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass ociamthesis-lyx
@@ -10,6 +10,7 @@
 
 % Use graphics package
 \usepackage{graphicx}
+\usepackage{setspace}
 
 % The crest on the titlepage can be set by changing the def below.
 % You can get others from http://www.ox.ac.uk/branding_toolkit/
@@ -17,8 +18,8 @@
 %\def\crest{{\includegraphics{titlepage/beltcrest-gold.pdf}}}
 
 % Set the text on the title page here
-\title{Radio Astronomy Instrumentation for Redshifted Hydrogen Line Science}
-\author{Danny Price}
+\title{A Treatise on Quick Brown Foxes, Jumping, and Lazy Dogs}
+\author{Bilbo Baggins}
 \college{Worcester College}
 \university{University of Oxford}
 %\renewcommand{\submittedtext}{change the default text here if needed}
@@ -34,13 +35,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -51,15 +52,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 2
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
-\cite_engine natbib_numerical
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Index
 \shortcut idx
@@ -196,7 +206,7 @@ end{romanpages}
 
 
 \backslash
-setstretch{2}
+setstretch{1.6}
 \end_layout
 
 \end_inset
@@ -230,7 +240,7 @@ filename "chapters/Chapter 2.lyx"
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "references/bao"
-options "bibtotoc,styles/bibtex styles/gillow"
+options "styles/bibtex/gillow"
 
 \end_inset
 
